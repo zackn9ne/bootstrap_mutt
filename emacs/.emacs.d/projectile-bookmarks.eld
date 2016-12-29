@@ -1,1 +1,0 @@
-("~/Dropbox/rails_projects/basic_chat/" "~/Dropbox/rails_projects/todoly/")
