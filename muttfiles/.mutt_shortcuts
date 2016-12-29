@@ -1,0 +1,10 @@
+ #-- help shortcuts with blankspace	
+bind editor <space> noop
+
+#---- shortcut keys
+bind index G imap-fetch-mail # G to get mail
+macro index,pager gt "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to 'Sent Mail'"
+macro index,pager gs <change-folder>=[Gmail]/Starred<enter>	"Go to 'Starred'"
+
+
+bind index B bounce-message

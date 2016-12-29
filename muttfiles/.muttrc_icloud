@@ -1,0 +1,29 @@
+# load with:
+#mutt -F /path/to/this.rc
+
+# secrets are on:
+source "gpg -d ~/.muttpass_icloud.gpg |"
+
+# server is on:
+set folder = "imaps://imap.mail.me.com:993"
+
+# icloud magic °º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø,¸
+
+set imap_pipeline_depth = 0
+set smtp_authenticators = 'gssapi:login'
+
+# icloud magic °º¤ø,¸¸,ø¤º°`°º¤ø,¸,ø¤°º¤ø,¸¸,ø¤º°`°º¤ø,¸
+
+
+#---- safe global variables ---- ---- ---- ---- ---- ---- ---- ---- ----#
+set spoolfile = "+INBOX"
+set use_from = yes
+set envelope_from = yes
+set ssl_force_tls = yes
+bind index G imap-fetch-mail # G to get mail
+set editor = "emacs"
+unset record
+set move = no
+set charset = "utf-8"
+
+

@@ -1,0 +1,10 @@
+#----- set your imap  server:
+set folder = "imaps://imap.gmail.com:993"
+
+
+#----- muttpass:
+source "gpg -d ~/.muttpass_gmail.gpg |"
+
+
+#----- defaults
+source ~/.mutt_defaults

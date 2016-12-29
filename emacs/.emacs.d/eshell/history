@@ -1,0 +1,128 @@
+cd rudy_rails/
+ls
+cd movies/
+ls
+rails s
+rake db:migrate
+rails s
+rake routes
+rails s
+rails c
+gem install rb-readline
+rails c
+sudo gem install rb-readline
+rails c
+dfjk
+leh
+exit
+ssh root@45.55.152.125
+cd /tmp
+ls
+git clone git@github.com:zackn9ne/portfolio_site.git
+cd portfolio_site/
+ls
+ls
+ls -lha
+ls *.php
+cd ..
+git clone git@github.com:zackn9ne/portfolio.git real_port
+cd real_port/
+ls
+php info.php 
+ls
+xls
+ssh root@45.55.152.125
+cush
+su caddy
+ls
+cd /home/caddy
+fg
+ssh root@45.55.152.125
+server
+cat ~/.bash_profile 
+cd /Library/WebServer/Documents
+ls
+cd portfolio/
+git status
+git pull 
+sudo git pull
+history
+cd
+ls
+cd /tmp
+ls
+git clone git@github.com:JoJoPerez/module2_rails_projects.git perez_rails
+cd perez_rails/
+ls
+cd MT_rails_project/
+ls
+cat .gitignore 
+rails s
+bundle
+bundle install --without production
+bundle update
+bundle install --without production
+bundle
+bundle install
+ls
+rails s
+bundle install
+bundle update --source coffee-script-source
+rails s
+rails s
+rails s
+rails s
+rails s
+yo
+cd rails_projects/
+ls
+cd trying_clearance/
+ls
+rake routes
+cd /tmp/
+git clone git@github.com:rudy0ne/homework1.git
+mv homework1/ rudys
+cd rudys/
+ls
+cd final/
+ls
+browser-sync -v
+browser-sync --version
+browser-sync start --server 'final' --files 'final'p
+cd ..
+browser-sync start --server 'final' --files 'final'p
+browser-sync start --server 'final' --files 'final'
+ls final/
+browser-sync start --server 'final' --files 'final'
+brew cask install git tower
+brew cask install git-tower
+brew install gpg
+gpg2
+cat ~/.gnupg/
+cat ~/.gnupg/gpg.conf 
+exit
+fg
+exit
+gpg --list-secret-keys
+echo $GPGHOME
+gpg2 --list-secret-keys
+brew install pinentry-mac
+brew linkapps pinentry-mac
+echo RELOADAGENT | gpg-connect-agent
+cp -r ~/Downloads/AGENCY-HTML/ ~/Sites/
+ls ../
+ls ~/Sites/
+php
+s
+ls
+touch ../phpmailer.php
+cd ..
+ls
+ls
+php phpmailer.php 
+php phpmailer.php 
+php phpmailer.php 
+php phpmailer.php 
+php phpmailer.php 
+php phpmailer.php 
+history

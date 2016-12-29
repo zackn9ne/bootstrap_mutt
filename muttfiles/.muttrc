@@ -1,0 +1,47 @@
+#-------.muttrc & .muttrc_account & .muttpass_account sane defaults solution--------------------------------#
+#------ howto
+#------ files required:
+#------ 1. .muttrc
+#------ 2. .muttrc_account
+#------ 3. .muttpass_account.gpg
+#------ 4. OPTIONAL: repeat 2 & 3 for many accounts and do kbd shortcuts
+#-----------------------------------------------------------------------------------------------------#
+#------ .gitignore
+#------ .muttpass*
+#------ *.gpg
+#------ publish your config safely
+
+
+#---- on load (chose account)
+source ~/.muttrc_gmail
+
+#-----------------------------------------------------------------------------------------------------#
+#---- .muttrc_gmail
+#---- 1. sets imap
+#---- 2. loads secrets
+
+#---- in secrets file-------------------------------------------------------------------------------#
+#set realname = "your sent from name"
+#set from = "youremail@gmail.com"
+#set smtp_url = "smtps://youremail@gmail.com@smtp.gmail.com:465/"
+#set imap_user = "youremail@gmail.com"
+#set smtp_pass="pass"
+#set imap_pass="pass"
+#---- end secrets file----------------------------------------------------------------------------#
+
+#----multi account kbd shortcuts-----------------------------------------------------------#
+folder-hook 'google' 'source ~/.muttrc_gmail'
+macro index <f2> '<sync-mailbox><enter-command>source ~/.muttrc_gmail<enter><change-folder>!<enter>'
+
+folder-hook 'google' 'source ~/.muttrc_dfa'
+macro index <f3> '<sync-mailbox><enter-command>source ~/.muttrc_dfa<enter><change-folder>!<enter>'
+
+folder-hook 'google' 'source ~/.muttrc_hellozach'
+macro index <f4> '<sync-mailbox><enter-command>source ~/.muttrc_hellozach<enter><change-folder>!<enter>'
+#----end multi account kbd shortcuts-----------------------------------------------------#
+
+#----- kbd shortcuts
+source ~/.mutt_shortcuts
+
+#----- mutt defaults load last
+source ~/.mutt_defaults

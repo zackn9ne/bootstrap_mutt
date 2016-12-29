@@ -1,0 +1,8 @@
+
+#----- muttpass:
+source "gpg -d ~/.muttpass_dfa.gpg |"
+
+#----- im the imap  server *safe*:
+set folder = "imaps://imap.gmail.com:993"
+
+set ssl_starttls=yes
