@@ -1,5 +1,10 @@
 ## a sane set of defaults for mutt
 
+1. git clone
+2. `deploy.sh`
+3. `$ emacs -daemon`
+
+## the boring stuff below 
 This is based on three files:
 
 1. `.muttrc`
