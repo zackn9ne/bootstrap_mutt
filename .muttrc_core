@@ -20,14 +20,6 @@ source ~/.muttrc_gmail
 #---- 1. sets imap
 #---- 2. loads secrets
 
-#---- in secrets file-------------------------------------------------------------------------------#
-#set realname = "your sent from name"
-#set from = "youremail@gmail.com"
-#set smtp_url = "smtps://youremail@gmail.com@smtp.gmail.com:465/"
-#set imap_user = "youremail@gmail.com"
-#set smtp_pass="pass"
-#set imap_pass="pass"
-#---- end secrets file----------------------------------------------------------------------------#
 
 #----multi account kbd shortcuts-----------------------------------------------------------#
 folder-hook 'google' 'source ~/.muttrc_gmail'
@@ -40,8 +32,30 @@ folder-hook 'google' 'source ~/.muttrc_hellozach'
 macro index <f4> '<sync-mailbox><enter-command>source ~/.muttrc_hellozach<enter><change-folder>!<enter>'
 #----end multi account kbd shortcuts-----------------------------------------------------#
 
-#----- kbd shortcuts
-source ~/.mutt_shortcuts
+#----- kbd shortcuts-----------------------------------------------------#
+ #-- help shortcuts with blankspace	
+bind editor <space> noop
+
+#---- shortcut keys
+bind index G imap-fetch-mail # G to get mail
+macro index,pager gt "<change-folder>=[Gmail]/Sent Mail<enter>" "Go to 'Sent Mail'"
+macro index,pager gs <change-folder>=[Gmail]/Starred<enter>	"Go to 'Starred'"
+
+
+bind index B bounce-message
+
+
+
 
 #----- mutt defaults load last
-source ~/.mutt_defaults
+#---- source this stuff last ---- ---- ---- ---- ---- ---- ---- ---- ----#
+unset record
+set spoolfile = "+INBOX"
+set use_from = yes
+set envelope_from = yes
+set ssl_force_tls = yes
+set move = no
+set charset = "utf-8"
+set editor="emacsclient %s" #---- editor
+
+
